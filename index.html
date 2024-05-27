@@ -19,17 +19,25 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Seção 1</h2>
-            <p>Conteúdo da seção 1...</p>
-        </section>
-
-        <section>
-            <h2>Seção 2</h2>
-            <p>Conteúdo da seção 2...</p>
-        </section>
+  <main>
+        <div class="question">
+            <h2>Título da Pergunta</h2>
+            <p>Aqui vai a pergunta que você quer fazer.</p>
+            <button onclick="responder('sim')">Sim</button>
+            <button onclick="responder('nao')">Não</button>
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function responder(resposta) {
+            alert("Você respondeu: " + resposta);
+            // Adicione aqui o código para processar a resposta
+        }
+    </script>
 
     <footer>
         <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
